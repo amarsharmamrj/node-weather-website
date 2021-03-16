@@ -1,0 +1,51 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+.header a:link,
+.header a:visited {
+    color: rgb(125, 125, 126);
+    padding: 5px 15px 10px 0px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+.header a:hover,
+.header a:active {
+    color: rgb(59, 59, 245);
+    text-decoration: underline;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 10px 0px;
+}
+
+input {
+    height: 34px;
+}
+
+button {
+    height: 40px;
+    padding: 0px 10px;
+    cursor: pointer;
+}

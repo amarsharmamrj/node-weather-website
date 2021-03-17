@@ -1,14 +1,26 @@
 body {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0px;
+    background-color: #b3f5dc;
+}
+
+.logo {
+    display: inline-block;
+    color: rgb(74, 10, 194);
+    font-weight: 800;
+}
+
+.menu {
+    float: right;
 }
 
 .main-content {
     flex-grow: 1;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 img {
@@ -16,23 +28,25 @@ img {
     width: auto;
 }
 
+.header {
+    background-color: #e27d60;
+    padding: 15px 100px;
+}
+
 .header a:link,
 .header a:visited {
-    color: rgb(125, 125, 126);
+    color: rgb(251, 251, 251);
     padding: 5px 15px 10px 0px;
     text-decoration: none;
+    font-size: 18px;
     font-weight: 700;
     transition: all 0.4s;
 }
 
 .header a:hover,
 .header a:active {
-    color: rgb(59, 59, 245);
+    color: #e8e9e9;
     text-decoration: underline;
-}
-
-hr {
-    margin-bottom: 20px;
 }
 
 h1 {
@@ -40,12 +54,57 @@ h1 {
     margin: 10px 0px;
 }
 
+h2 {
+    margin-bottom: 0px;
+}
+
+.form-inner {
+    border: 2px solid rgb(241, 125, 125);
+    display: inline-block;
+    padding: 0px;
+    border-radius: 40px;
+    background-color: rgb(121, 87, 245);
+}
+
 input {
-    height: 34px;
+    height: 38px;
+    width: 280px;
+    border-radius: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+input:focus {
+    outline-color: transparent;
+    outline-style: auto;
+    outline-width: 0px;
 }
 
 button {
     height: 40px;
-    padding: 0px 10px;
+    font-size: 20px;
+    color: rgb(236, 236, 236);
+    padding: 0px 20px;
     cursor: pointer;
+    background-color: transparent;
+    border: 0px solid transparent;
+    transition: color 0.2s;
+}
+
+button:hover {
+    color: white;
+}
+
+.data-item {
+    background-color: #e22f48;
+    display: inline-block;
+    width: 400px;
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.data-item span {
+    color: white;
+    font-weight: 800;
 }

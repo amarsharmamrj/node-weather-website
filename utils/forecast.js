@@ -10,7 +10,17 @@ const forecast = (latitude, longitude, callback) => {
         } else if (response.body.error) {
             callback("Unable to find location !", undefined);
         } else {
-            callback("", response.body.daily.data[0].summary + ' It is currently ' + response.body.currently.temperature + ' degress out. There is ' + response.body.currently.precipProbability + ' % chances of precipitation.');
+            // callback("", response.body.daily.data[0].summary + ' It is currently ' + response.body.currently.temperature + ' degress out. There is ' + response.body.currently.precipProbability + ' % chances of precipitation.');
+            callback("", {
+                summary: response.body.currently.summary,
+                temperature: response.body.currently.temperature,
+                dewPoint: response.body.currently.dewPoint,
+                humidity: response.body.currently.humidity,
+                pressure: response.body.currently.pressure,
+                windSpeed: response.body.currently.windSpeed,
+                visibility: response.body.currently.visibility,
+                precPercentage: response.body.currently.precipProbability
+            });
         }
     });
 };

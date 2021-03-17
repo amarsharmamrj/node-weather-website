@@ -11,17 +11,26 @@
 </head>
 
 <body>
+    {{>header}}
     <div class="main-content">
-        {{>header}}
-        <p>This page will show us the weather information.</p>
+        <p style="color: rgb(63, 62, 62);font-size:22px;font-weight:500">Provide location to see weather information.</p>
 
         <form action="">
-            <input type="text" placeholder="Location..">
-            <button>Search</button>
+            <div class="form-inner">
+                <input type="text" placeholder="Location..">
+                <button>Search</button>
+            </div>          
         </form>
 
-        <p id="message-1"></p>
-        <p id="message-2"></p>
+        <p id="message-1" style="font-size:20px;color:blue;"></p>
+        <p class="data-item" id="summary">summary: <span></span></p>
+        <p class="data-item" id="temperature">temperature(deg celcius): <span></span></p>
+        <p class="data-item" id="dewPoint">dewPoint(deg celcius): <span></span></p>
+        <p class="data-item" id="humidity">humidity: <span></span></p>
+        <p class="data-item" id="pressure">pressure: <span></span></p>
+        <p class="data-item" id="windSpeed">windSpeed(m/s): <span></span></p>
+        <p class="data-item" id="visibility">visibility(km): <span></span></p>
+        <p class="data-item" id="precPercentage">precPercentage(%): <span></span></p>
 
     </div>
     
